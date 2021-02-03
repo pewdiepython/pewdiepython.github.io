@@ -1,15 +1,19 @@
-.back{margin:0px, 0px, 0px, 0px;
+.back {
+    margin: 0px, 0px, 0px, 0px;
     background: rgb(211, 173, 180);
     height: 500px;
 }
-.fonts{display: flex;
+
+.fonts {
+    display: flex;
     justify-content: center;
     margin-top: 50px;
     color: rgb(78, 78, 78);
-    font-family:initial;   
+    font-family: initial;
 }
 
-.form1{ border:2px solid rgb(78, 78, 78);
+.form1 {
+    border: 2px solid rgb(78, 78, 78);
     border-radius: 5px;
     padding: 10px;
     background: rgba(131, 131, 131, 0.308);
@@ -18,59 +22,76 @@
     width: 40%;
     color: black;
 }
-.form{
+
+.form {
     background: rgba(131, 131, 131, 0.308);
     margin-left: 400px;
     margin-top: 40px;
     width: 40%;
     color: black;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     margin-top: 120px;
 }
 
-.content{display: flex;
+.content {
+    display: flex;
     justify-content: center;
-margin-top: 50px;
+    margin-top: 50px;
 }
 
-.dcar{
+.dcar {
     display: flex;
     justify-content: space-around;
 }
 
-.bord{border: 3px solid rgb(78, 78, 78);
+.bord {
+    border: 3px solid rgb(78, 78, 78);
     width: 400px;
     height: 250px;
     margin-top: 50px;
     margin-left: 470px;
-    
-
 }
-td{
+
+td {
     border: 1px solid rgb(78, 78, 78);
 }
-td:hover{color:rgb(211, 173, 180); background: rgba(112, 112, 112, 0.418); transition: 0.5s;}
-.c1{
+
+td:hover {
+    color: rgb(211, 173, 180);
+    background: rgba(112, 112, 112, 0.418);
+    transition: 0.5s;
+}
+
+.c1 {
     background: #bee1e1;
 }
-.c2{
-    background: #f5938a;}
-.bb{align-items: flex-end;
+
+.c2 {
+    background: #f5938a;
+}
+
+.bb {
+    align-items: flex-end;
     margin-left: 10px;
     margin-top: 50px;
 }
-.bb2{display: flex;
+
+.bb2 {
+    display: flex;
     align-items: flex-end;
     margin-left: 10px;
     margin-top: 180px;
 }
-.pict{display: flex;
+
+.pict {
+    display: flex;
     justify-content: space-between;
-margin-top: 50px;
-margin-left: 20px;
-margin-right: 20px;
-align-items: flex-end;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: flex-end;
 }
