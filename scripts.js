@@ -1,6 +1,6 @@
-function analyze() {
-    const baseUrl = 'https://pewdiepython-backend.azurewebsites.net'
+const baseUrl = 'https://pewdiepython-backend.azurewebsites.net'
 
+function analyze() {
     let username = document.getElementById('instagram-username').value;
 
     let xhr = new XMLHttpRequest();
@@ -20,6 +20,24 @@ function analyze() {
     }
 
     xhr.open('GET', baseUrl + `/api/instagram/analyze?username=${username}&maxPosts=${maxPosts}`);
+    xhr.send();
+}
+
+function analyzeImage() {
+    let imageUrl = document.getElementById('image-url').value;
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+
+            window.location.href = 'result.html';
+
+            localStorage.setItem('colors', xhr.response);
+        }
+    }
+
+    xhr.open('GET', baseUrl + '/api/image/analyze');
+    xhr.setRequestHeader('url', imageUrl);
     xhr.send();
 }
 
