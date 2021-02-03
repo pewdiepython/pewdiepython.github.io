@@ -63,11 +63,15 @@ function renderResultsTable() {
         visualizationNode.innerHTML = 'Візуалізація';
         visualizationNode.style.background = rowColor;
 
+        let imageLink = document.createElement('a');
+        imageLink.href = colors[row].url;
+        imageLink.target = '_blank';
         let imageNode = new Image(200, 200);
         imageNode.src = colors[row].url;
+        imageLink.appendChild(imageNode);
 
         colorCell.appendChild(colorNode);
         visualizationCell.appendChild(visualizationNode);
-        imageCell.appendChild(imageNode);
+        imageCell.appendChild(imageLink);
     }
 }
