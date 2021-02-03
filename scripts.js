@@ -1,5 +1,5 @@
 function analyze() {
-    const baseUrl = 'http://pewdiepython-backend.azurewebsites.net'
+    const baseUrl = 'https://pewdiepython-backend.azurewebsites.net'
 
     let username = document.getElementById('instagram-username').value;
 
